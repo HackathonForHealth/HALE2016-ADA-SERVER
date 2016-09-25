@@ -1,8 +1,10 @@
 class Api::RegistrationsController < Api::ApiController
     
   def create
-    puts "--------------------#{params}-------------"
+    
     @user = User.new(email: params[:email],
+             avatar: params[:avatar],
+             name: params[:name],
              password: params[:password], 
              password_confirmation: params[:password_confirmation])
     

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160925033400) do
+ActiveRecord::Schema.define(version: 20160925144017) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -60,6 +60,9 @@ ActiveRecord::Schema.define(version: 20160925033400) do
     t.string   "authentication_token",   limit: 30
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
+    t.string   "name"
+    t.integer  "exp",                               default: 0
+    t.string   "avatar"
   end
 
   add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true

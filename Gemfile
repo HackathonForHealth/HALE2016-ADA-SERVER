@@ -38,6 +38,15 @@ gem 'activeadmin', '1.0.0.pre2'
 # Use Devise for authentication (for admins, users and researchers)
 gem 'devise', '3.5.6'
 
+# Use Carrierwave for uploading files
+gem 'carrierwave', '0.11.0'
+
+# Use Carrierwave-base64 for uploading files received as binary (like pictures received through the API)
+gem 'carrierwave-base64', '2.3.1'
+
+# Use Rmagick for processing images (resizing and cropping, for example). This is used to create versions of uploaded images
+gem 'rmagick', '2.16.0'
+
 # Use Mysql2 to use Mysql databases
 gem 'mysql2', '~> 0.3.18'
 
