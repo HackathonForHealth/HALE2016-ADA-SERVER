@@ -32,6 +32,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Use Activeadmin for creating an admin pannel
+gem 'activeadmin', '1.0.0.pre2'
+
+# Use Devise for authentication (for admins, users and researchers)
+gem 'devise', '3.5.6'
+
+# Use Mysql2 to use Mysql databases
+gem 'mysql2', '~> 0.3.18'
+
+# Use simple_token_authentication for authentication using token, to deal with the authentication through the API
+gem 'simple_token_authentication', '~> 1.0'
+
+# Use Rack-cors to allow Cross-origin requests.
+gem 'rack-cors', '0.4.0', :require => 'rack/cors'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
